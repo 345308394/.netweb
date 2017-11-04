@@ -3,12 +3,16 @@
 
 首先拖动两个DropDownList控件
 在代码中定义两个函数
+
+
+
 在第一个DropDownList控件添加数据
  protected void DropdownList1()
     {
         DropDownList1.Items.Add(new ListItem("山东省"));
         DropDownList1.Items.Add(new ListItem("河南省"));
     }
+
 第二个函数根据第一个控件中的数据更换第二个控件中的数据
 protected void DropdownList2()
 {
