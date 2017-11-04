@@ -22,22 +22,22 @@ public partial class Register : System.Web.UI.Page
         DropDownList1.Items.Add(new ListItem("河南省"));
     }
     protected void DropdownList2()
-    {
-        switch (DropDownList1.SelectedValue)
-        {
-            case "山东省":
-                DropDownList2.Items.Clear();
+{
+  switch(DropDownList1.SelectedValue)
+  {case"山东省":
+     DropDownList2.Items.Clear();
                 DropDownList2.Items.Add(new ListItem("济宁市"));
                 DropDownList2.Items.Add(new ListItem("菏泽市"));
                 DropDownList2.Items.Add(new ListItem("济南市"));
                 break;
-            case "河南省":
-                DropDownList2.Items.Clear();
-                DropDownList2.Items.Add(new ListItem("商丘"));
+   case"河南省":
+     DropDownList2.Items.Clear();
+                 DropDownList2.Items.Add(new ListItem("商丘"));
                 DropDownList2.Items.Add(new ListItem("郑州"));        
                 break;
-        }
-    }
+   
+  }
+}
     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
     {
         DropdownList2();
